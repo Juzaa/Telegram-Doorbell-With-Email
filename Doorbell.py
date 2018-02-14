@@ -25,7 +25,7 @@ try:
     while True:
         input_state = GPIO.input(18)
         if input_state == False:
-            bot.sendMessage(chat_id=-CHAT-TOKEN-HERE,
+            bot.sendMessage(chat_id=-CHAT-ID-HERE,
             text="Ovella on joku!")
             msg = "Ovella on joku!"
             server.sendmail("SENDER-EMAIL-HERE", "RECEIVER-EMAIL-HERE", msg)
@@ -42,6 +42,6 @@ try:
             
 
 finally:
-    bot.sendMessage(chat_id=-1001261581372,
+    bot.sendMessage(chat_id=-CHAT-ID-HERE,
     text="Ovikello on pois päältä!")
     GPIO.cleanup()
